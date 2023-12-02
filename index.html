@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Container part  -->
+    <div class="container_part">
+      <div class="deposit_money amount_box">
+        <h1 id="current_deposit">00</h1>
+        
+        <p>Diposit Amount</p>
+      </div>
+      <div class="withdraw_money amount_box">
+       <h1 id="current_withdraw">00</h1>
+        
+        <p>Withdraw Amount</p>
+    </div>
+      <div  class="Final_balance amount_box">
+        <h1 id="current_balance">00</h1>
+       
+        <p>Total Balance</p>
+    </div>
+    </div>
+    <div class="btn_collection">
+
+      <div class="class_btn">
+        <input
+          class="space"
+          type="number"
+          placeholder="Enter Deposit Amount"
+          id="deposit_amount"
+          
+        />
+        <br>
+        <button onclick="depositHandler()" type="button" class="btn">Deposit Money</button>
+      </div>
+
+      <div class="class_btn">
+        <input
+          type="number"
+          name=""
+          class="space"
+          placeholder="Enter withdraw Amount"
+          id="withdraw_amount"
+        />
+        <br>
+        <button onclick="withdrawHandler()" type="button" class="btn">Withdray Money</button>
+      </div>
+
+    </div>
+
+    <!-- This is link up of js file -->
+    <script src="app.js"></script>
+  </body>
+</html>
